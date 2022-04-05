@@ -68,6 +68,31 @@ export const networks: Record<number, NetworkData> = {
       },
     ],
   },
+  106: {
+    chainId: 106,
+    name: 'Velas',
+    shortName: 'Velas',
+    urlName: 'velas',
+    nativeCurrency: {
+      address: '0xc579D1f3CF86749E05CD06f7ADe17856c2CE3126',
+      name: 'Velas',
+      symbol: 'VLX',
+      decimals: 18,
+      balance: BigNumber.from(0),
+    },
+    explorerURL: 'https://evmexplorer.velas.com/',
+    rpcURL: 'https://explorer.velas.com/rpc/',
+    icon: '/velas.png',
+    isTestNet: false,
+    supportedLiquidityPairTokens: [
+      {
+        // WFUSE
+        address: '0xc579D1f3CF86749E05CD06f7ADe17856c2CE3126',
+        // WFUSE / USDT lp on https://wagyuswap.app/
+        stablePair: '0x7F3cB73FC470c2c9F543FdD17dF4De0e97b51A97',
+      },
+    ],
+  },
   122: {
     chainId: 122,
     name: 'Fuse',

@@ -70,10 +70,10 @@ module.exports = {
   networks: {
     localhost: {
       url: "http://localhost:8545",
-      /*      
+      /*
         notice no mnemonic here? it will just use account 0 of the hardhat node to deploy
         (you can put in a mnemonic here to set the deployer locally)
-      
+
       */
     },
 
@@ -177,6 +177,12 @@ module.exports = {
     },
     metistest: {
       url: "https://stardust.metis.io/?owner=588",
+      accounts: {
+        mnemonic: mnemonic(),
+      },
+    },
+    velas: {
+      url: "https://explorer.velas.com/rpc/",
       accounts: {
         mnemonic: mnemonic(),
       },
