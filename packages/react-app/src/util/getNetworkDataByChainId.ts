@@ -20,6 +20,30 @@ export const networks: Record<number, NetworkData> = {
     isTestNet: true,
     supportedLiquidityPairTokens: [],
   },
+  40: {
+    chainId: 40,
+    name: 'Telos',
+    shortName: 'Telos',
+    urlName: 'telos',
+    nativeCurrency: {
+      address: '0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E',
+      name: 'Telos',
+      symbol: 'TLOS',
+      decimals: 18,
+      balance: BigNumber.from(0),
+    },
+    explorerURL: 'https://www.teloscan.io/',
+    rpcURL: 'https://rpc1.eu.telos.net/evm/',
+    icon: '/telos.png',
+    isTestNet: false,
+    supportedLiquidityPairTokens: [
+      {
+        address: '0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E',
+        // pair w/ USDC on https://www.zappy.finance/swap
+        stablePair: '0xeA96c8d2FFA10FFeF65a87C957C27114051336F4',
+      },
+    ],
+  },
   56: {
     chainId: 56,
     name: 'Binance Smart Chain',
