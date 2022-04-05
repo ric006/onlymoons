@@ -70,10 +70,10 @@ module.exports = {
   networks: {
     localhost: {
       url: "http://localhost:8545",
-      /*      
+      /*
         notice no mnemonic here? it will just use account 0 of the hardhat node to deploy
         (you can put in a mnemonic here to set the deployer locally)
-      
+
       */
     },
 
@@ -216,7 +216,14 @@ module.exports = {
         mnemonic: mnemonic(),
       },
     },
-
+    boba: {
+      // url: "https://speedy-nodes-nyc.moralis.io/abe6dedb3ddb2a52245b68af/polygon/mainnet", // <---- YOUR MORALIS ID! (not limited to infura)
+      url: "https://mainnet.boba.network/",
+      // gasPrice: 1000000000,
+      accounts: {
+        mnemonic: mnemonic(),
+      },
+    },
     matic: {
       // url: "https://rpc-mainnet.maticvigil.com/",
       url: "https://polygon-rpc.com/",

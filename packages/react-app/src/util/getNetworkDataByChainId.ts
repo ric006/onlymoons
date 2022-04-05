@@ -136,6 +136,31 @@ export const networks: Record<number, NetworkData> = {
       },
     ],
   },
+  288: {
+    chainId: 288,
+    name: 'Boba',
+    shortName: 'Boba',
+    urlName: 'boba',
+    nativeCurrency: {
+      address: '0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000',
+      name: 'Ethereum',
+      symbol: 'ETH',
+      decimals: 18,
+      balance: BigNumber.from(0),
+    },
+    explorerURL: 'https://blockexplorer.boba.network/',
+    rpcURL: 'https://mainnet.boba.network/',
+    icon: '/boba.png',
+    isTestNet: false,
+    supportedLiquidityPairTokens: [
+      // WMATIC
+      {
+        address: '0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000',
+        // pair w/ USDT on https://oolongswap.com/#/
+        stablePair: '0x232130D2802c283eb870586cAB8eE49F8Ea0B181',
+      },
+    ],
+  },
   // 588: {
   //   chainId: 588,
   //   name: 'Metis Stardust (TESTNET)',
