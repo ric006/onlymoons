@@ -111,6 +111,31 @@ export const networks: Record<number, NetworkData> = {
     isTestNet: true,
     supportedLiquidityPairTokens: [],
   },
+  128: {
+    chainId: 128,
+    name: 'Heco',
+    shortName: 'Heco',
+    urlName: 'heco',
+    nativeCurrency: {
+      address: '0x5545153CCFcA01fbd7Dd11C0b23ba694D9509A6F',
+      name: 'HT',
+      symbol: 'HT',
+      decimals: 18,
+      balance: BigNumber.from(0),
+    },
+    explorerURL: 'https://hecoinfo.com/',
+    rpcURL: 'https://http-mainnet.hecochain.com/',
+    icon: '/heco.png',
+    isTestNet: false,
+    supportedLiquidityPairTokens: [
+      {
+        // WFUSE
+        address: '0x5545153CCFcA01fbd7Dd11C0b23ba694D9509A6F',
+        // WFUSE / USDT lp on https://mdex.com/#/
+        stablePair: '0x499B6E03749B4bAF95F9E70EeD5355b138EA6C31',
+      },
+    ],
+  },
   137: {
     chainId: 137,
     name: 'Polygon',
