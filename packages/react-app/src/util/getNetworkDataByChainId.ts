@@ -20,6 +20,30 @@ export const networks: Record<number, NetworkData> = {
     isTestNet: true,
     supportedLiquidityPairTokens: [],
   },
+  10: {
+    chainId: 10,
+    name: 'Optimism',
+    shortName: 'Optimism',
+    urlName: 'optimism',
+    nativeCurrency: {
+      address: '0x4200000000000000000000000000000000000006',
+      name: 'Ethereum',
+      symbol: 'ETH',
+      decimals: 18,
+      balance: BigNumber.from(0),
+    },
+    explorerURL: 'https://optimistic.etherscan.io/',
+    rpcURL: 'https://mainnet.optimism.io/',
+    icon: '/optimism.png',
+    isTestNet: false,
+    supportedLiquidityPairTokens: [
+      {
+        address: '0x4200000000000000000000000000000000000006',
+        // pair w/ DAI on https://uniswap.org/
+        stablePair: '0x03aF20bDAaFfB4cC0A521796a223f7D85e2aAc31',
+      },
+    ],
+  },
   56: {
     chainId: 56,
     name: 'Binance Smart Chain',
