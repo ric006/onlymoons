@@ -222,6 +222,7 @@ module.exports = {
         mnemonic: mnemonic(),
       },
     },
+
     polytest: {
       // url: "https://speedy-nodes-nyc.moralis.io/abe6dedb3ddb2a52245b68af/polygon/mumbai", // <---- YOUR MORALIS ID! (not limited to infura)
       url: "https://rpc-mumbai.maticvigil.com/",
@@ -234,6 +235,14 @@ module.exports = {
     matic: {
       // url: "https://rpc-mainnet.maticvigil.com/",
       url: "https://polygon-rpc.com/",
+      // gasPrice: 1000000000,
+      accounts: {
+        mnemonic: mnemonic(),
+      },
+    },
+    fantom: {
+      // url: "https://speedy-nodes-nyc.moralis.io/abe6dedb3ddb2a52245b68af/polygon/mainnet", // <---- YOUR MORALIS ID! (not limited to infura)
+      url: "https://rpc3.fantom.network",
       // gasPrice: 1000000000,
       accounts: {
         mnemonic: mnemonic(),

@@ -160,6 +160,31 @@ export const networks: Record<number, NetworkData> = {
       },
     ],
   },
+  250: {
+    chainId: 250,
+    name: 'Fantom Opera',
+    shortName: 'Fantom',
+    urlName: 'fantom',
+    nativeCurrency: {
+      address: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
+      name: 'Fantom',
+      symbol: 'FTM',
+      decimals: 18,
+      balance: BigNumber.from(0),
+    },
+    explorerURL: 'https://ftmscan.com/',
+    rpcURL: 'https://rpc3.fantom.network',
+    icon: '/fantom.png',
+    isTestNet: false,
+    supportedLiquidityPairTokens: [
+      // WMATIC
+      {
+        address: '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83',
+        // pair w/ USDC on https://spookyswap.finance/
+        stablePair: '0x2b4C76d0dc16BE1C31D4C1DC53bF9B45987Fc75c',
+      },
+    ],
+  },
   588: {
     chainId: 588,
     name: 'Metis Stardust (testnet)',
