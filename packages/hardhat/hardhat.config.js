@@ -177,6 +177,12 @@ module.exports = {
         mnemonic: mnemonic(),
       },
     },
+    syscoin: {
+      url: "https://rpc.syscoin.org",
+      accounts: {
+        mnemonic: mnemonic(),
+      },
+    },
     bsctest: {
       url: "https://data-seed-prebsc-1-s1.binance.org:8545/",
       accounts: {

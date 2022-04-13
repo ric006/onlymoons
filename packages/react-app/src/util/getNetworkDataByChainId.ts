@@ -68,6 +68,30 @@ export const networks: Record<number, NetworkData> = {
       },
     ],
   },
+  57: {
+    chainId: 57,
+    name: 'Syscoin',
+    shortName: 'Syscoin',
+    urlName: 'syscoin',
+    nativeCurrency: {
+      address: '0xd3e822f3ef011Ca5f17D82C956D952D8d7C3A1BB',
+      name: 'Syscoin',
+      symbol: 'SYS',
+      decimals: 18,
+      balance: BigNumber.from(0),
+    },
+    explorerURL: 'https://explorer.syscoin.org/',
+    rpcURL: 'https://rpc.syscoin.org',
+    icon: '/syscoin.png',
+    isTestNet: false,
+    supportedLiquidityPairTokens: [
+      {
+        address: '0xd3e822f3ef011Ca5f17D82C956D952D8d7C3A1BB',
+        // pair w/ USDC on https://pegasys.finance/
+        stablePair: '0x2CDF912CbeaF76d67feaDC994D889c2F4442b300',
+      },
+    ],
+  },
   97: {
     chainId: 97,
     name: 'Binance Smart Chain (testnet)',
