@@ -221,6 +221,31 @@ export const networks: Record<number, NetworkData> = {
       // },
     ],
   },
+  1284: {
+    chainId: 1284,
+    name: 'Moonbeam',
+    shortName: 'Moonbeam',
+    urlName: 'moonbeam',
+    nativeCurrency: {
+      address: '0xAcc15dC74880C9944775448304B263D191c6077F',
+      name: 'GLMR',
+      symbol: 'GLMR',
+      decimals: 18,
+      balance: BigNumber.from(0),
+    },
+    explorerURL: 'https://moonbeam.moonscan.io/',
+    rpcURL: 'wss://wss.api.moonbeam.network',
+    icon: '/moonbeam.png',
+    isTestNet: false,
+    supportedLiquidityPairTokens: [
+      //
+      {
+        address: '0xAcc15dC74880C9944775448304B263D191c6077F',
+        // pair w/ USDC on https://stellaswap.com/
+        stablePair: '0x555B74dAFC4Ef3A5A1640041e3244460Dc7610d1',
+      },
+    ],
+  },
   2001: {
     chainId: 2001,
     name: 'Milkomeda',
