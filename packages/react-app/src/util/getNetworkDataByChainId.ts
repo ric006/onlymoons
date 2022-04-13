@@ -245,6 +245,31 @@ export const networks: Record<number, NetworkData> = {
       },
     ],
   },
+  42220: {
+    chainId: 42220,
+    name: 'Celo',
+    shortName: 'Celo',
+    urlName: 'celo',
+    nativeCurrency: {
+      address: '0x471EcE3750Da237f93B8E339c536989b8978a438',
+      name: 'CELO',
+      symbol: 'CELO',
+      decimals: 18,
+      balance: BigNumber.from(0),
+    },
+    explorerURL: 'https://explorer.celo.org/',
+    rpcURL: 'https://forno.celo.org/',
+    icon: '/celo.png',
+    isTestNet: false,
+    supportedLiquidityPairTokens: [
+      //
+      {
+        address: '0x471EcE3750Da237f93B8E339c536989b8978a438',
+        // pair w/ mCUSD on https://explorer.celo.org/
+        stablePair: '0xb460F9Ae1fEa4f77107146C1960bb1C978118816',
+      },
+    ],
+  },
   43114: {
     chainId: 43114,
     name: 'Avalanche',
