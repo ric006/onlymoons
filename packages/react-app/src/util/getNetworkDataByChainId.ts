@@ -160,6 +160,31 @@ export const networks: Record<number, NetworkData> = {
       },
     ],
   },
+  321: {
+    chainId: 321,
+    name: 'KuCoin Community Chain',
+    shortName: 'KCC',
+    urlName: 'kcc',
+    nativeCurrency: {
+      address: '0x4446Fc4eb47f2f6586f9fAAb68B3498F86C07521',
+      name: 'KCS',
+      symbol: 'KCS',
+      decimals: 18,
+      balance: BigNumber.from(0),
+    },
+    explorerURL: 'https://explorer.kcc.io/en/',
+    rpcURL: 'https://rpc-mainnet.kcc.network',
+    icon: '/kcc.png',
+    isTestNet: false,
+    supportedLiquidityPairTokens: [
+      // WMATIC
+      {
+        address: '0x4446Fc4eb47f2f6586f9fAAb68B3498F86C07521',
+        // pair w/ USDT on https://www.mojitoswap.finance/
+        stablePair: '0xB3b92d6b2656f9cEb4A381718361A21BF9B82BD9',
+      },
+    ],
+  },
   588: {
     chainId: 588,
     name: 'Metis Stardust (testnet)',
