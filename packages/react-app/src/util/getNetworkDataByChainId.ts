@@ -20,6 +20,30 @@ export const networks: Record<number, NetworkData> = {
     isTestNet: true,
     supportedLiquidityPairTokens: [],
   },
+  20: {
+    chainId: 20,
+    name: 'Elastos',
+    shortName: 'Elastos',
+    urlName: 'elastos',
+    nativeCurrency: {
+      address: '0x517E9e5d46C1EA8aB6f78677d6114Ef47F71f6c4',
+      name: 'Elastos',
+      symbol: 'ELA',
+      decimals: 18,
+      balance: BigNumber.from(0),
+    },
+    explorerURL: 'https://eth.elastos.io/',
+    rpcURL: 'https://api.elastos.io/eth',
+    icon: '/elastos.png',
+    isTestNet: false,
+    supportedLiquidityPairTokens: [
+      {
+        address: '0x517E9e5d46C1EA8aB6f78677d6114Ef47F71f6c4',
+        // pair w/ ethUSDC on https://glidefinance.io/swap
+        stablePair: '0x6077b7990d3d0dfB5A50f1D207f67ac5955B999d',
+      },
+    ],
+  },
   25: {
     chainId: 25,
     name: 'Cronos',

@@ -163,6 +163,14 @@ module.exports = {
         mnemonic: mnemonic(),
       },
     },
+    elastos: {
+      // url: "https://evm-cronos.crypto.org/",
+      url: "https://api.elastos.io/eth",
+      // gasPrice: 5000000000000,
+      accounts: {
+        mnemonic: mnemonic(),
+      },
+    },
     cro: {
       // url: "https://evm-cronos.crypto.org/",
       url: "https://evm.cronos.org",
