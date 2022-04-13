@@ -221,6 +221,31 @@ export const networks: Record<number, NetworkData> = {
       // },
     ],
   },
+  1285: {
+    chainId: 1285,
+    name: 'Moonriver',
+    shortName: 'Moonriver',
+    urlName: 'moonriver',
+    nativeCurrency: {
+      address: '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
+      name: 'MOVR',
+      symbol: 'MOVR',
+      decimals: 18,
+      balance: BigNumber.from(0),
+    },
+    explorerURL: 'https://moonriver.moonscan.io/',
+    rpcURL: 'https://rpc.api.moonriver.moonbeam.network',
+    icon: '/moonriver.png',
+    isTestNet: false,
+    supportedLiquidityPairTokens: [
+      //
+      {
+        address: '0x98878B06940aE243284CA214f92Bb71a2b032B8A',
+        // pair w/ USDC on https://solarbeam.io/
+        stablePair: '0xe537f70a8b62204832B8Ba91940B77d3f79AEb81',
+      },
+    ],
+  },
   2001: {
     chainId: 2001,
     name: 'Milkomeda',
