@@ -178,6 +178,31 @@ export const networks: Record<number, NetworkData> = {
     isTestNet: true,
     supportedLiquidityPairTokens: [],
   },
+  888: {
+    chainId: 888,
+    name: 'Wanchain',
+    shortName: 'Wanchain',
+    urlName: 'wanchain',
+    nativeCurrency: {
+      address: '0xdabD997aE5E4799BE47d6E69D9431615CBa28f48',
+      name: 'Wan',
+      symbol: 'WAN',
+      decimals: 18,
+      balance: BigNumber.from(0),
+    },
+    explorerURL: 'https://www.wanscan.org/',
+    rpcURL: 'https://gwan-ssl.wandevs.org:56891',
+    icon: '/wanchain.png',
+    isTestNet: false,
+    supportedLiquidityPairTokens: [
+      // WMATIC
+      {
+        address: '0xdabD997aE5E4799BE47d6E69D9431615CBa28f48',
+        // pair w/ USDC on quickswap
+        stablePair: '0x0a886Dc4d584d55E9A1FA7eB0821762296b4ec0E',
+      },
+    ],
+  },
   1088: {
     chainId: 1088,
     name: 'Metis Andromeda',
