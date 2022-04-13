@@ -239,6 +239,14 @@ module.exports = {
         mnemonic: mnemonic(),
       },
     },
+    harmony: {
+      // url: "https://speedy-nodes-nyc.moralis.io/abe6dedb3ddb2a52245b68af/polygon/mainnet", // <---- YOUR MORALIS ID! (not limited to infura)
+      url: "https://api.harmony.one",
+      // gasPrice: 1000000000,
+      accounts: {
+        mnemonic: mnemonic(),
+      },
+    },
     rinkebyArbitrum: {
       url: "https://rinkeby.arbitrum.io/rpc",
       gasPrice: 0,

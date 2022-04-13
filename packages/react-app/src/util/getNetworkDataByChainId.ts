@@ -270,6 +270,31 @@ export const networks: Record<number, NetworkData> = {
       },
     ],
   },
+  1666600000: {
+    chainId: 1666600000,
+    name: 'Harmony',
+    shortName: 'Harmony',
+    urlName: 'harmony',
+    nativeCurrency: {
+      address: '0xcF664087a5bB0237a0BAd6742852ec6c8d69A27a',
+      name: 'One',
+      symbol: 'ONE',
+      decimals: 18,
+      balance: BigNumber.from(0),
+    },
+    explorerURL: 'https://explorer.harmony.one/',
+    rpcURL: 'https://api.harmony.one',
+    icon: '/harmony.png',
+    isTestNet: false,
+    supportedLiquidityPairTokens: [
+      //
+      {
+        address: '0xcF664087a5bB0237a0BAd6742852ec6c8d69A27a',
+        // pair w/ 1USDC on https://game.defikingdoms.com/
+        stablePair: '0x66C17f5381d7821385974783BE34c9b31f75Eb78',
+      },
+    ],
+  },
 }
 
 export default function getNetworkDataByChainId(chainId: number): NetworkData | undefined {
