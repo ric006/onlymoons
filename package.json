@@ -39,6 +39,7 @@
     "deploy:polygon": "yarn deploy --network polygon",
     "deploy:polygontest": "yarn deploy --network polytest",
     "deploy:astar": "yarn deploy --network astar",
+    "deploy:meter": "yarn deploy --network meter",
     "deploy:rinkeby": "yarn deploy --network rinkeby",
     "deploy:ropsten": "yarn deploy --network ropsten",
     "deploy:kovan": "yarn deploy --network kovan",

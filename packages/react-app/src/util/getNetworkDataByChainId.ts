@@ -68,6 +68,31 @@ export const networks: Record<number, NetworkData> = {
       },
     ],
   },
+  82 : {
+  	chainId: 82,
+  	name: 'Meter',
+  	shortName: 'Meter',
+  	urlName: 'meter',
+  	nativeCurrency: {
+  		address: '0x228ebBeE999c6a7ad74A6130E81b12f9Fe237Ba3',
+  		name: 'MeterGov',
+  		symbol: 'MTRG',
+  		decimals: 18,
+  		balance: BigNumber.from(0),
+  	},
+  	explorerURL: 'https://explorer.meter.io/',
+  	rpcURL: 'https://rpc.meter.io',
+  	icon: '/meter.png',
+  	isTestNet: false,
+  	supportedLiquidityPairTokens: [
+  		// MTRG
+  		{
+  			address: '0x228ebBeE999c6a7ad74A6130E81b12f9Fe237Ba3',
+  			// pair w/ BUSD on https://voltswap.finance/#/swap
+  			stablePair: '0xaCA210bd7D12c15560994e4C7B2BEc1b538Ad306',
+  		},
+  	],
+  },
   97: {
     chainId: 97,
     name: 'Binance Smart Chain (testnet)',
