@@ -275,6 +275,31 @@ export const networks: Record<number, NetworkData> = {
       },
     ],
   },
+  9001 : {
+  	chainId: 9001,
+  	name: 'Evmos',
+  	shortName: 'Evmos',
+  	urlName: 'evmos',
+  	nativeCurrency: {
+  		address: '0xD4949664cD82660AaE99bEdc034a0deA8A0bd517',
+  		name: 'Evmos',
+  		symbol: 'EVMOS',
+  		decimals: 18,
+  		balance: BigNumber.from(0),
+  	},
+  	explorerURL: 'https://evm.evmos.org/',
+  	rpcURL: 'https://eth.bd.evmos.org:8545',
+  	icon: '/evmos.png',
+  	isTestNet: false,
+  	supportedLiquidityPairTokens: [
+  		// WEVMOS
+  		{
+  			address: '0xD4949664cD82660AaE99bEdc034a0deA8A0bd517',
+  			// pair w/ USDC on https://app.diffusion.fi/#/swap
+  			stablePair: '0x6DF94e977D82d917a621DFf75C00aBd19A27c26B',
+  		},
+  	],
+  },
   43114: {
     chainId: 43114,
     name: 'Avalanche',

@@ -183,6 +183,12 @@ module.exports = {
         mnemonic: mnemonic(),
       },
     },
+    evmos: {
+      url: "https://eth.bd.evmos.org:8545",
+      accounts: {
+        mnemonic: mnemonic(),
+      },
+    },
     metis: {
       url: "https://andromeda.metis.io/?owner=1088",
       accounts: {
