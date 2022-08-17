@@ -118,6 +118,13 @@ module.exports = {
       },
     },
 
+    etc: {
+      url: "https://www.ethercluster.com/etc",
+      accounts: {
+        mnemonic: mnemonic(),
+      },
+    },
+
     avax: {
       url: "https://api.avax.network/ext/bc/C/rpc",
 

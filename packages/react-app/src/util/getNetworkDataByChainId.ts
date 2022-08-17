@@ -68,6 +68,31 @@ export const networks: Record<number, NetworkData> = {
       },
     ],
   },
+  61 : {
+    chainId: 61,
+    name: 'Ethereum Classic',
+    shortName: 'ETC',
+    urlName: 'etc',
+    nativeCurrency: {
+      address: '0x82A618305706B14e7bcf2592D4B9324A366b6dAd',
+      name: 'ETC',
+      symbol: 'ETC',
+      decimals: 18,
+      balance: BigNumber.from(0),
+    },
+    explorerURL: 'https://blockscout.com/etc/mainnet/',
+    rpcURL: 'https://www.ethercluster.com/etc',
+    icon: '/etc.png',
+    isTestNet: false,
+    supportedLiquidityPairTokens: [
+      // ETC
+      {
+        address: '0x82A618305706B14e7bcf2592D4B9324A366b6dAd',
+        // pair w/  on 
+        stablePair: '',
+      },
+    ],
+  },
   97: {
     chainId: 97,
     name: 'Binance Smart Chain (testnet)',

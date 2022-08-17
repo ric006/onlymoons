@@ -28,6 +28,7 @@
     "deploy": "yarn workspace @onlymoons-io/hardhat deploy",
     "deploy:cro": "yarn deploy --network cro",
     "deploy:bsc": "yarn deploy --network bsc",
+    "deploy:etc": "yarn deploy --network etc",
     "deploy:localhost": "yarn deploy --network localhost",
     "deploy:bsctest": "yarn deploy --network bsctest",
     "deploy:metis": "yarn deploy --network metis",
